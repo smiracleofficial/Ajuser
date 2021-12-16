@@ -56,7 +56,7 @@ Julie.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
             var uri = encodeURI(match[1])
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
+        if (!!message.mention && message.mention[0] == '919645529981@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/bgm/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.DURATION, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
@@ -89,7 +89,7 @@ if(pattern.test(message.message)){
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '917994873071@s.whatsapp.net') {
+        if (!!message.mention && message.mention[0] == '919645529981@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/bgm/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true },duration: Config.DURATION, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
@@ -121,7 +121,7 @@ Julie.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.STICKERP){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
-    if (!!message.mention && message.mention[0] == '917994873071@s.whatsapp.net') {
+    if (!!message.mention && message.mention[0] == '919645529981@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
 const array = ['Ajuser','asena','ayin','back','Back','Bot','fuck','Fuck','Hehe','Hello','Hlo','Kill','kill','kiss','line','love','mwolu','Mwolu','single','tha','thund','z','Z','bie','Bie','Kaztro','Sad','Poocha','Poda','Bomb','Ayin','Ariyo','Alone','Pubg','Pes','Bgmi','Ff','Free fire','chavanam','Manassilayo','Kodathi','Kollum','vatt','Gaanam','Single','Ajuser','Xxxtentacion','Aa','Pottan','Budhi','Love','Njan','Mazha','Hi','Vella','Patt','Colour','Hacker','Ok','tts','Hack','Hii']
